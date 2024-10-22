@@ -1,0 +1,332 @@
+body {
+    background-color: #fff; /* Use a hex code for consistency */
+    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #fff; /* Use hex code */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    padding: 0.5rem 1rem; /* Consistent padding */
+}
+
+/* Colors */
+.primary-color {
+    color: #fff; /* Typically for backgrounds */
+}
+
+.secondary-color {
+    color: green; /* Consider using a variable for theme colors */
+}
+
+/* Product Card Styles */
+.product-card-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.product-card-container:hover {
+    transform: scale(1.02);
+}
+
+.product-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limit the height of the image */
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    font-weight: bold; /* Added for emphasis */
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #333;
+}
+
+.quick-shop-btn {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* Adjust based on your needs */
+    right: 10px; /* Adjust based on your needs */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Make it round */
+    width: 40px; /* Adjust size */
+    height: 40px; /* Adjust size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.quick-shop-btn:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+.quick-shop-btn i {
+    font-size: 20px; /* Adjust icon size */
+}
+.quick-shop-button-container {
+    position: absolute; /* Or relative, depending on your layout */
+    top: 280px; /* Adjust as needed */
+    right: 1px; /* Adjust as needed */
+    z-index: 1; /* Ensure it appears above other elements */
+  }
+  
+
+.out-of-stock {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Product Slider Styles */
+.product-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.product-slider img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for image change */
+}
+
+.product-slider .active {
+    transform: scale(1.05); /* Scale active image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-listing .row {
+        flex-direction: column;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .navbar-nav {
+        margin-top: 0.5rem; /* Spacing for smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons on small screens */
+    }
+}
+
+/* Order Page Styles */
+.order-page {
+    padding: 20px;
+}
+
+.order-item {
+    transition: transform 0.2s;
+}
+
+.order-item:hover {
+    transform: scale(1.02);
+}
+
+.order-item-img {
+    height: 100px;
+    object-fit: cover;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px; /* Space below headings */
+}
+
+.order-items {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: green; /* Consider defining in variables */
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+.btn-primary:hover {
+    background-color: darkgreen;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+.btn-secondary:hover {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+/* Close Button Styles */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff; /* Use hex code */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Spinner styles */
+.spinner-border {
+    margin: 20px auto; /* Center spinner */
+}
+
+/* No products message */
+.no-products-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Total Price Styles */
+.total-price {
+    font-weight: bold;
+}
+
+/* Adjusting cart button to appear more clickable */
+.btn-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive behavior for navbar */
+
+
+/* Quick Shop Modal Styles */
+/* Modal Overlay Styles */
+.quick-shop-modal-overlay {
+    position: fixed; /* Position it relative to the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index:10000000; /* High z-index */
+    display: flex; /* Center modal */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quick-shop-modal-content {
+    background-color: white; /* White background for modal */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    max-width: 500px; /* Max width */
+    width: 100%; /* Full width */
+    position: relative; /* To keep it above other elements */
+  }
+  
+  
+
+/* Prevent underlying content from being interactive */
+body.modal-open {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Add this class when the modal is open */
+
+.btn-primary {
+    flex: 1; /* Makes the button occupy available space */
+    margin-left: 10px;
+}
+
+.btn-outline-secondary {
+    flex: 1; /* Makes the button occupy available space */
+    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    .quick-shop-modal-content {
+        width: 95%;
+    }
+}
+
+/* Additional Styles */
+.text-muted {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.btn {
+    border-radius: 5px;
+}
